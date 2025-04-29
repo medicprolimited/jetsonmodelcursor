@@ -11,7 +11,7 @@ app = FastAPI(title="Jetson Sentence Transformers API")
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://apps.medicpro.london"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
